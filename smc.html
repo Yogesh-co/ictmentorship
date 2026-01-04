@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply – ICT Mentorship</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="smc.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+  <div class="apply-wrapper">
+    <div class="apply-card">
+
+      <h1>Mentorship Application</h1>
+      <p class="subtitle">
+        Take the first step towards disciplined trading
+      </p>
+
+      <form id="applyForm">
+        <div class="field">
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="field">
+          <label>Mobile Number</label>
+          <input type="tel" name="mobile" placeholder="Enter your mobile number" required>
+        </div>
+
+        <div class="field">
+          <label>Course Type</label>
+          <input type="text" name="course_type" value="SMC" readonly>
+        </div>
+
+        <button type="submit" id="submitBtn">
+          Apply Now
+        </button>
+
+        <p class="note">
+          We’ll review your application and contact you shortly.
+        </p>
+      </form>
+      <!-- SUCCESS BOX -->
+<div class="success-box" id="successBox">
+  <div class="checkmark">✓</div>
+  <h2>Applied</h2>
+</div>
+
+  </div>
+
+<script src="smc.js"></script>
+</body>
+</html>

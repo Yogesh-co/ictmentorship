@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICT Mentorship</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+
+  <header class="header">
+    <!-- Brand -->
+    <a href="index.html" style="text-decoration:none;color:#fff">
+      <div class="brand">ICT MENTORSHIP</div>
+    </a>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#strategy" class="nav-link">Strategy</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+
+        <!-- LOGIN -->
+        <li class="login-btn">
+          <a href="login.html" class="nav-link">Login</a>
+        </li>
+
+        <!-- USER MENU -->
+        <li id="userMenu" class="user-menu" style="display:none;">
+          <div class="user-circle" id="userCircle">U</div>
+          <div class="user-dropdown" id="userDropdown">
+            <p id="userName"></p>
+            <a href="account.html">Account</a>
+            <a href="#" id="logoutBtn" class="logout">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-content" id="home">
+    <p class="hero-subtitle" id="welcomeText">
+      WELCOME TO THE WORLD OF
+    </p>
+
+    <h2 class="hero-title">
+      <span id="typeText"></span>
+      <span class="cursor">|</span>
+    </h2>
+
+    <div class="hero-buttons">
+      <button class="btn primary" id="applyBtn">Apply for Mentorship</button>
+      <a style="text-decoration: none;" href="#about" class="btn secondary">About Us</a>
+    </div>
+  </div>
+
+</section>
+</div>
+
+<!-- APPLY ERROR -->
+<div id="applyError" class="apply-error">
+  Please login first
+</div>
+
+<!-- JS -->
+<script src="index.js"></script>
+
+</body>
+</html>

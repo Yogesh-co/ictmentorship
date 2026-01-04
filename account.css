@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* MAIN CARD */
+.account-container {
+  width: 100%;
+  max-width: 360px;
+  background: #0d0d0d;
+  border-radius: 18px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(185, 131, 255, 0.15);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+/* PROFILE PIC */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #b983ff;
+  color: #000;
+  font-size: 48px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* USER NAME */
+.user-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu-item {
+  padding: 14px;
+  border-radius: 12px;
+  background: #111;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid #222;
+}
+
+.menu-item:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+/* LOGOUT */
+.menu-item.logout {
+  background: transparent;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+}
+
+.menu-item.logout:hover {
+  background: #ff4d4d;
+  color: #fff;
+}
+/* BACKGROUND IMAGE */
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("bg.png") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+/* DARK OVERLAY FOR PREMIUM LOOK */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}
+@media (max-width: 480px) {
+
+  .account-container {
+    width: 90%;
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+  }
+
+  .user-name {
+    font-size: 18px;
+  }
+
+  .menu-item {
+    font-size: 14px;
+    padding: 13px;
+  }
+}
